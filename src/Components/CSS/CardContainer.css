@@ -1,0 +1,142 @@
+/* För kortcontainern */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px; /* Mindre gap för små skärmar */
+  padding: 20px; /* Minskad padding */
+}
+
+/* Design för korten utan animation */
+.UserCard {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Gör korten flexibla för mindre skärmar */
+  max-width: 600px;
+  height: auto; /* Anpassa höjden automatiskt */
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  padding: 20px;
+  position: relative;
+}
+
+/* Hover-effekt för korten */
+.UserCard:hover {
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Design för bilder */
+.UserCard .userpic {
+  width: 120px; /* Mindre storlek för små skärmar */
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.UserCard:hover .userpic {
+  transform: scale(1.05); /* Zooma in på bilden när man hovrar över kortet */
+}
+
+/* Rubrik och text */
+.UserCard .card-title {
+  font-size: 1.5rem; /* Mindre textstorlek */
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+}
+
+.UserCard .card-text {
+  font-size: 1.1rem; /* Mindre textstorlek */
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* För knapparna i kortet */
+.card-button {
+  background-color: rgba(0, 49, 180, 1);
+  color: white;
+  border: none;
+  padding: 10px 20px; /* Mindre padding för små knappar */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem; /* Mindre fontstorlek */
+  transition: background-color 0.3s ease;
+  width: 120px;
+  height: 40px;
+}
+
+.card-button:hover {
+  background-color: rgb(59, 161, 212);
+}
+
+/* Design för bilderna i modalen */
+.userpic1 {
+  width: 180px; /* Justerad bildstorlek för responsivitet */
+  height: 180px;
+  object-fit: cover;
+  object-position: 50% 15%;
+  border-radius: 15%;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.userpic1:hover {
+  transform: scale(1.1); /* Zoomar in på bilden när man hovrar */
+}
+
+/* Flexbox-container för kort */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Responsiv design för kort */
+.card {
+  flex: 1 1 calc(33% - 20px);
+  max-width: calc(33% - 20px);
+}
+
+@media (max-width: 1024px) {
+  .card {
+    flex: 1 1 calc(50% - 20px); /* Två kort per rad för mellanstora skärmar */
+    max-width: calc(50% - 20px);
+  }
+
+  .UserCard {
+    width: 90%; /* Gör korten lite bredare */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%; /* Ett kort per rad för små skärmar */
+    max-width: 100%;
+  }
+
+  .UserCard .userpic {
+    width: 100px; /* Mindre bilder för små skärmar */
+    height: 100px;
+  }
+
+  .UserCard .card-title {
+    font-size: 1.3rem; /* Mindre rubrikstorlek */
+  }
+
+  .UserCard .card-text {
+    font-size: 1rem; /* Mindre textstorlek */
+  }
+
+  .card-button {
+    font-size: 0.8rem; /* Mindre knapptext */
+    padding: 8px 15px; /* Mindre padding för knappen */
+    width: 100px;
+    height: 35px;
+  }
+}

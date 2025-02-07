@@ -1,0 +1,157 @@
+/* Bakgrunds-overlay som täcker hela skärmen */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Mörk transparent bakgrund */
+  backdrop-filter: blur(5px); /* Sudda bakgrunden för en mjukare look */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Se till att innehållet är centrerat både horisontellt och vertikalt */
+  z-index: 1000; /* Lägger modalen över allt annat */
+}
+
+/* För modalen */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed; /* Håll modalen på en fast position */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Bakgrund som täcker hela skärmen med en mörk ton */
+  z-index: 1000; /* Se till att modalen ligger över andra element */
+}
+
+/* Behåll modalens generella stil */
+.modal-content {
+  background: transparent;
+  backdrop-filter: blur(10px);
+  padding: 20px 0px;
+  border-radius: 15px;
+  width: 70%; /* Gör modalen bredare för att passa två bilder */
+  max-width: 800px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border: 3px solid #ffffff;
+}
+
+/* Flexbox för bilderna */
+.modal-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Mellanrum mellan bilderna */
+  margin: 20px 0; /* Lite marginal mellan bilderna och texten */
+}
+
+/* Styla varje bild */
+.modal-image {
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  object-position: 50% 5%;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  filter: grayscale(90%);
+  border: 3px solid #fff;
+}
+
+.modal-image:hover {
+  transform: scale(1.05); /* Zoomar in när användaren hovrar över en bild */
+  filter: grayscale(0%);
+  cursor: pointer;
+}
+
+/* Titeln på karaktärerna */
+.modal-title {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #e8e8e8;
+}
+
+/* Beskrivningstext av karaktärerna  */
+.modal-description,
+.modal-text {
+  font-size: 1rem;
+  margin: 0 25px;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+.modal-text {
+  margin-top: 15px;
+}
+
+/* Stäng-knappen */
+.modal-close {
+  background-color: #2645cf;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.modal-close:hover {
+  background-color: #008f96;
+}
+
+/* Fadin-effekt */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Media queries för små skärmar */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 85%; /* Nästan full bredd på små skärmar */
+    padding: 15px 10px; /* Mindre padding */
+  }
+
+  .modal-images {
+    gap: 5px; /* Mindre mellanrum mellan bilderna */
+    margin: 10px 0;
+  }
+
+  .modal-image {
+    width: 25%; /* Anpassa bredden för att få plats */
+    max-width: 250px; /* Mindre maxbredd */
+    max-height: 250px;
+  }
+
+  .modal-title {
+    font-size: 1.2rem; /* Mindre fontstorlek */
+  }
+
+  .modal-description,
+  .modal-text {
+    font-size: 0.8rem; /* Mindre textstorlek */
+  }
+
+  
+  .modal-close {
+    font-size: 0.8rem; /* Mindre fontstorlek */
+    padding: 8px 15px; /* Mindre padding */
+  }
+}

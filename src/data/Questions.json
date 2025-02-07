@@ -1,0 +1,97 @@
+[
+    {
+      "question": "Vad heter Hickes drake?",
+      "options":["Toothless", "Stormfly", "Barf och Belch", "Grump"],
+      "answer": "Toothless"
+    },
+    {
+      "question": "Vad är Valka känd för?",
+      "options": ["Träna drakar", "Flyga skepp", "Bygga vapen", "Strida"],
+      "answer": "Träna drakar"
+    },
+    {
+      "question": "Vad är Astrid mest känd för?",
+      "options": ["Hickes kärlek", "Tämja drakar", "Båda ovan", "Ingen"],
+      "answer": "Båda ovan"
+    },
+    {
+      "question":
+        "Vad heter den farliga draken som kan kontrollera andra drakar i “Draktränaren 2”?",
+      "options": ["Röda Döden", "Alfan", "Bevingad Hämdare", "Isdraken"],
+      "answer": "Alfan"
+    },
+    {
+      "question": "Vad är speciellt med Ljusfasan jämfört med Tandlöse?",
+      "options": [
+        "Hon är snabbare än Tandlöse",
+        "Hon kan försvinna genom kamouflage",
+        "Hon är större än Tandlöse",
+        "Hon har eldkastande vingar"
+      ],
+      "answer": "Hon kan försvinna genom kamouflage"
+    },
+    {
+      "question": "Vad är Valka’s relation till Hicke?",
+      "options": [
+        "Hon är hans moster",
+        "Hon är hans lärare",
+        "Hon är hans mamma",
+        "Hon är hans farmor"
+      ],
+      "answer": "Hon är hans mamma"
+    },
+    {
+      "question": "Vad är Hicke's stora mål i livet?",
+      "options": [
+        "Att bli en krigare",
+        "Att skapa fred mellan drakar och människor",
+        "Att bli kung",
+        "Att tämja den största draken"
+      ],
+      "answer": "Att skapa fred mellan drakar och människor"
+    },
+    {
+      "question": "Vad heter den jättelika draken i “Draktränaren?",
+      "options": ["Eldskuggan", "Stormvind", "Skuggfasan", "Röda döden"],
+      "answer": "Röda döden"
+    },
+    {
+      "question": "Vad är Ruffnut och Tuffnut mest kända för?",
+      "options": [
+        "Deras ständiga bråk",
+        "Deras skarpa intelligens",
+        "Deras kärlke till drakar",
+        "Deras uppfinningsrikedom"],
+      "answer": "Deras ständiga bråk"
+    },
+    {
+      "question": "Vad är Gobbers roll i Berk?",
+      "options": ["Huvudkrigare", "Smed och tränare", "Skeppsbyggare", "Jägare"],
+      "answer": "Smed och tränare"
+    },
+    {
+      "question": "Vad vill Drago Bludvist använda drakar till?",
+      "options": ["Skydda sitt folk", "Bli rik", "Erövra världen", "Få vänner"],
+      "answer": "Erövra världen"
+    },
+    {
+      "question": "Vem rider på draken Stormfly?",
+      "options": ["Hicke", "Astrid", "Gobber", "Ruffnut"],
+      "answer": "Astrid"
+    },
+    {
+      "question": "Vad har Stoick för relation till Hicke?",
+      "options": ["Morbror", "Mentor", "Farbror", "Pappa"],
+      "answer": "Pappa"
+    },
+    {
+      "question": "Vilken unik förmåga har Valka",
+      "options": ["Hon är mästate på att skapa vapen", "Hon flyger utan drake", "Hon kommunicerar med alla drakar", "Hon bygger vikinigskepp"],
+      "answer": "Hon kommunicerar med alla drakar"
+    },
+    {
+      "question": "Vad gör Hicke som förändrar relationen mellan drakar och vikingar?",
+      "options": ["Han besegrar alla drakar", "Han tämjer en drake", "Han blir hövding", "Han bygger en drakarmé"],
+      "answer": "Han tämjer en drake"
+    }
+]
